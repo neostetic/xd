@@ -7,10 +7,12 @@ public class Application {
 
     public static void main(String[] args) {
         int size = 10;
+        int width = size;
+        int height = size;
         int min = 0;
         int max = 5;
-        int[][] array1 = MatrixUtils.generate(size, min, max);
-        int[][] array2 = MatrixUtils.generate(size, min, max);
+        int[][] array1 = MatrixUtils.generate(width, height, min, max);
+        int[][] array2 = MatrixUtils.generate(width, height, min, max);
 
         System.out.println("array1:");
         MatrixUtils.print(array1);
